@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lista de Criptos - CriptoStats</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" sizes="48x48" href="/img/icon-48x48.png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="navbar-brand">
+        <img src="img/icon-48x48.png"></img>
+        <a class="name">CriptoStats</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" id="home">
+            <a class="nav-link" href="./index.html">Página Principal</a>
+          </li>
+          <li class="nav-item" id="favoritos">
+            <a class="nav-link" href="./favoritos.html">Favoritos</a>
+          </li>
+        </ul>
+        <form id="form-search" class="form-inline my-2 my-lg-0" method="GET" action="./index.html">
+          <div class="search">
+            <input class="form-control mr-sm-2 procurar" type="search" id="cripto" name="cripto" id="cripto" placeholder="Procurar cripto-moedas" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Procurar</button>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <h4 class="titulo">TOP 100 CRIPTOS</h4>
+    <div class="toggle-grupo text-center">
+      <div class="toggle">
+        <div class="titulo-toggle">Lista de 10 Criptos</div>
+        <label class="switch">
+          <input type="checkbox" id="lista-10" name="lista-10" form="form-search">
+          <span class="slider round lista-10"></span>
+        </label>
+      </div>
+      <div class="toggle extras">
+        <div class="titulo-toggle">Outras opções</div>
+        <label class="switch">
+          <input type="checkbox" id="extras" name="extras" form="form-search">
+          <span class="slider round extras"></span>
+        </label>
+      </div>
+    </div>
+    <div class="text-center"><button type="button" class="btn btn-secondary" id="remover">Remover as 10 primeiras criptos</button></div>
+    <div class="container mt-3 mb-4 caixa">
+      <div class="col-lg-9 mt-4 mt-lg-0">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="user-dashboard-info-box table-responsive mb-0 bg-white p-4 shadow-sm">
+              <table class="table manage-candidates-top mb-0">
+                <thead>
+                  <tr>
+                    <th>Posição</th>
+                    <th>Cripto-Moeda</th>
+                    <th class="text-center">Favorito</th>
+                    <th class="action text-right valor">Valor ($)</th>
+                  </tr>
+                </thead>
+                <tbody class="media-list">
+                  <tr class="coins-list">
+                    <td class="coin-position"></td>
+                    <td class="title">
+                      <div class="thumb">
+                        <img class="coin-logo" src="" alt="">
+                      </div>
+                      <div class="coin-list-details">
+                        <div class="coin-list-info">
+                          <div class="coin-list-title">
+                            <a class="coin-nome"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="coin-list-favourite-time text-center">
+                      <a class="coin-list-favourite fav" title="Adicionar coin aos favoritos"><i class="fas fa-star"></i></a>
+                    </td>
+                    <td class="coin-valor text-right">
+                      <h6></h6>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.home.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html> 

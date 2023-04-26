@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Detalhes - CriptoStats</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" sizes="48x48" href="/img/icon-48x48.png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="navbar-brand">
+        <img src="img/icon-48x48.png"></img>
+        <a class="name">CryptoStats</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" id="home">
+            <a class="nav-link" href="./index.html">Página Principal</a>
+          </li>
+          <li class="nav-item" id="favoritos">
+            <a class="nav-link" href="./favoritos.html">Favoritos</a>
+          </li>
+        </ul>
+        <form id="form-search" class="form-inline my-2 my-lg-0" method="GET" action="./index.html">
+          <div class="search">
+            <input class="form-control mr-sm-2 procurar" type="search" id="cripto" name="cripto" id="cripto" placeholder="Procurar cripto-moedas" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Procurar</button>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="card w-50">
+          <div class="row ">
+              <div class="col-md-1 ">
+                <img class="cripto-logo" src="">
+              </div>
+              <div class="col-md-10 px-3 cripto-name-card">
+                <div class="card-block px-3">
+                  <h4 class="card-title cripto-name "></h4>
+                  <label id="cripto-rank"></label>
+                </div>
+              </div>
+              <div class="coin-list-favourite-time text-center detalhes">
+                <a class="coin-list-favourite fav" id="favorito" title="Adicionar coin aos favoritos"><i class="fas fa-star"></i></a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+          <div class="container-fluid">
+            <div class="header-body">
+              <div class="row stats">
+                <div class="col-xl-3 col-lg-6">
+                  <div class="card card-stats mb-4 mb-xl-0">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <h5 class="card-title text-uppercase text-muted mb-0">Valor Atual</h5>
+                          <span class="h2 font-weight-bold mb-0 cripto-valor"></span>
+                        </div>
+                        <div class="col-auto">
+                          <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                            <i class="fas fa-chart-bar"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="mt-3 mb-0 text-muted text-sm">
+                        <span class="mr-2 cripto-valor-mudanca"><i class="fa"></i> </span>
+                        <span class="text-nowrap">Últimas 24h</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-6">
+                  <div class="card card-stats mb-4 mb-xl-0">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <h5 class="card-title text-uppercase text-muted mb-0">Moedas a Circular</h5>
+                          <span class="h2 font-weight-bold mb-0 cripto-moeda-quantidade"></span>
+                        </div>
+                        <div class="col-auto">
+                          <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
+                            <i class="fas fa-chart-pie"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="mt-3 mb-0 text-muted text-sm">
+                        <span class="text-success mr-2 cripto-moeda-quantidade-total"></span>
+                        <span class="text-nowrap">Quantidade Máxima</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row stats">
+                <div class="col-xl-3 col-lg-6">
+                  <div class="card card-stats mb-4 mb-xl-0">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <h5 class="card-title text-uppercase text-muted mb-0">Extremos em 24h</h5>
+                          <span class="text-success h2 font-weight-bold mb-0 cripto-max"></span>
+                          <span class="text-nowrap">Máximo</span>
+                        </div>
+                        <div class="col-auto">
+                          <div class="icon icon-shape bg-dark text-white rounded-circle shadow">
+                            <i class="fas fa-arrows-alt-v"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="mt-3 mb-0 text-muted text-sm">
+                        <span class="text-danger mr-2 cripto-min"></span>
+                        <span class="text-nowrap">Minimo</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-6">
+                    <div class="card card-stats mb-4 mb-xl-0">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col">
+                            <h5 class="card-title text-uppercase text-muted mb-0">VALOR MÁXIMO DE SEMPRE</h5>
+                            <div class="maximo-valor-div">
+                              <span class="h2 font-weight-bold mb-0 valor-maximo"></span>
+                              <span class="text-nowrap ml-3 data-maximo"></span>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="icon icon-shape bg-info text-white rounded-circle shadow">
+                              <i class="fas fa-funnel-dollar"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="mt-3 mb-0 text-muted text-sm">
+                          <span class="text-warning mr-2 mudanca-valor"><i class="fas fa-arrow-down"></i> </span>
+                          <span class="text-nowrap">Percentagem / valor atual</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Page content -->
+        <footer class="footer">
+            <div class="row align-items-center justify-content-xl-between">
+              <div class="col-xl-6 m-auto text-center">
+                  <p class="updated"></p>
+              </div>
+            </div>
+          </footer>
+      </div>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.detalhes.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

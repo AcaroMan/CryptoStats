@@ -1,0 +1,356 @@
+body{
+    background-color: #f8f9fa!important
+}
+.p-4 {
+    padding: 1.5rem!important;
+}
+.mb-0, .my-0 {
+    margin-bottom: 0!important;
+}
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}    
+
+/* user-dashboard-info-box */
+.user-dashboard-info-box .coins-list .thumb {
+    margin-right: 20px;
+}
+.user-dashboard-info-box .coins-list .thumb img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.user-dashboard-info-box .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.coin-valor.text-right, .coin-position{
+    font-weight: 500;
+}
+
+
+.user-dashboard-info-box .coins-list td {
+    vertical-align: middle;
+}
+
+.user-dashboard-info-box td li {
+    margin: 0 4px;
+}
+
+.user-dashboard-info-box .table thead th {
+    border-bottom: none;
+}
+
+.table.manage-candidates-top th {
+    border: 0;
+}
+
+
+
+.table.manage-candidates-top {
+    min-width: 650px;
+}
+
+.user-dashboard-info-box .coin-list-details ul {
+    color: #969696;
+}
+
+.coin-nome{
+    font-weight: 600;
+}
+
+
+a.coin-list-favourite {
+    color: #e74c3c;
+    -webkit-box-shadow: -1px 4px 10px 1px rgba(24, 111, 201, 0.1);
+    box-shadow: -1px 4px 10px 1px rgba(24, 111, 201, 0.1);
+    cursor: pointer;
+}
+
+.candidate-list-image {
+    margin-right: 25px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 80px;
+    flex: 0 0 80px;
+    border: none;
+}
+
+.candidate-list-image img {
+    width: 80px;
+    height: 80px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.coin-list-title {
+    margin-bottom: 5px;
+}
+
+.coin-list-details ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+.coin-list-details ul li {
+    margin: 5px 10px 5px 0px;
+    font-size: 13px;
+}
+
+.coin-list-favourite-time {
+    margin-left: auto;
+    text-align: center;
+    font-size: 13px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 90px;
+    flex: 0 0 90px;
+}
+
+.coin-list-favourite-time span {
+    display: block;
+    margin: 0 auto;
+}
+
+.coin-list-favourite-time .coin-list-favourite {
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border: 1px solid #eeeeee;
+    border-radius: 100%;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    color: #646f79;
+}
+
+.coin-list-favourite-time .coin-list-favourite:hover {
+    background: #ffffff;
+    color: #e74c3c;
+}
+
+.titulo{
+    text-align: center;
+    padding: 30px;
+}
+
+.candidate-banner {
+    position: inherit;
+    -webkit-box-shadow: inherit;
+    box-shadow: inherit;
+    z-index: inherit;
+}
+
+.bg-white {
+    background-color: #ffffff !important;
+}
+.p-4 {
+    padding: 1.5rem!important;
+}
+.mb-0, .my-0 {
+    margin-bottom: 0!important;
+}
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.user-dashboard-info-box .coins-list .thumb {
+    margin-right: 20px;
+}
+
+/* TODO: CODIGO FEITO */
+
+form.form-inline.my-2.my-lg-0{
+    margin-right: 50px;
+}
+
+input.form-control.mr-sm-2.procurar{
+    width: 250px;
+}
+
+.bg-light {
+    background-color: #f3f3f3!important;
+}
+
+.name{
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.nav-item.active
+{
+    font-weight: 500;
+}
+
+.container.mt-3.mb-4.caixa
+{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:575.11px) {
+    .search{
+        text-align: center;
+    }
+
+    button.btn.btn-outline-dark
+    {
+        margin-top: 10px;
+    }
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #3d3d3d;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #3d3d3d;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+  
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.toggle-grupo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.toggle.extras {
+    margin-left: 50px;
+}
+
+.titulo-toggle {
+    font-weight: 500;
+}
+
+/*Detalhes*/
+.cripto-logo{
+    aspect-ratio: 1;
+    width:75px;
+    margin:10px;
+}
+
+.cripto-name-card{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.row.stats
+{
+    justify-content: center;
+    padding: 10px;
+}
+
+.rounded-circle {
+    border-radius: 50%!important;
+    width: 25px;
+}
+
+.icon.icon-shape{
+    text-align: center;
+}
+
+.coin-list-favourite-time.text-center.detalhes {
+    display: flex;
+    align-items: center;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+.footer{
+    margin-top:20px;
+    width:99% !important;
+}
+
+#cripto-rank{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maximo-valor-div
+{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:768px) {
+    .coin-list-favourite-time.text-center.detalhes {
+        display: flex;
+        align-items: center;
+        margin-left: -80px;
+        margin-top: -150px;
+    }
+}
